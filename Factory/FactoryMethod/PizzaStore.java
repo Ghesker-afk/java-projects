@@ -15,5 +15,7 @@ public abstract class PizzaStore {
   }
 
   // Now we have moved our factory object to this method. Our "factory method" is now abstract in PizzaStore
-  abstract Pizza createPizza(String type);
+
+  // Notice: All the responsibility for instantiating Pizzas has been moved into a method that acts as a factory!
+  protected abstract Pizza createPizza(String type);
 }
